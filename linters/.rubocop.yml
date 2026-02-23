@@ -1,0 +1,22 @@
+---
+# Shared org-wide RuboCop config for Ruby/Homebrew formula repos.
+# Individual repos can inherit from this and override as needed.
+
+AllCops:
+  NewCops: enable
+
+Metrics/BlockLength:
+  Enabled: false
+
+Layout/LineLength:
+  AllowedPatterns:
+    - '# renovate: .*'
+
+Naming/FileName:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
